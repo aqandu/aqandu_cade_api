@@ -134,6 +134,7 @@ def upload_file_to_influxdb(filename, database, measurement):
 
 @influx.route('/uploadcsv', methods=['POST'])
 def upload_file():
+    LOGGER.info('Route /uploadcsv was called. Inside upload_file()')
     if request.method == 'POST':
         # check if the post request has the file part
         if 'file' not in request.files:
@@ -149,16 +150,20 @@ def upload_file():
             upload_file_to_influxdb(file.filename, 'airu_offline', 'airQuality')
 
             # return redirect(url_for('uploaded_file', filename=filename))
-    # return
-    return '''
-    <!doctype html>
-    <title>Upload new File</title>
-    <h1>Upload new File</h1>
-    <form method=post enctype=multipart/form-data>
-      <input type=file name=file>
-      <input type=submit value=Upload>
-    </form>
-    '''
+    try:
+        return '''
+        <!doctype html>
+        <title>Upload new File</title>
+        <h1>Upload new File</h1>
+        <form method=post enctype=multipart/form-data>
+          <input type=file name=file>
+          <input type=submit value=Upload>
+        </form>
+        '''
+    except Exception as e:
+        LOGGER.info('html could not be rendered')
+        return str(e)
+
 
 
 @influx.errorhandler(InvalidUsage)
