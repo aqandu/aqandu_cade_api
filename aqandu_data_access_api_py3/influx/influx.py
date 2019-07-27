@@ -84,8 +84,8 @@ lookupParameterToAirUInflux = {
 
 UPLOAD_FOLDER = './uploads'
 ALLOWED_EXTENSIONS = {'csv'}
-current_app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-current_app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+# current_app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+# current_app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
 
 def allowed_file(filename):
@@ -95,15 +95,15 @@ def allowed_file(filename):
 
 def upload_file_to_influxdb(filename, database, measurement):
 
-    client = DataFrameClient(host='air.eng.utah.edu',
-                             port=8086,
-                             username='tBecnel',
-                             password='VaH6cCsBeML88kSg',
-                             database=database,
-                             ssl=True,
-                             verify_ssl=True)
+    client = DataFrameClient(host=current_app.config['INFLUX_HOST'],
+                                   port=current_app.config['INFLUX_PORT'],
+                                   username=current_app.config['INFLUX_USERNAME'],
+                                   password=current_app.config['INFLUX_PASSWORD'],
+                                   database=database,
+                                   ssl=current_app.config['SSL'],
+                                   verify_ssl=current_app.config['SSL'])
 
-    filename = current_app.config['UPLOAD_FOLDER'] + '/' + filename
+    filename = UPLOAD_FOLDER + '/' + filename
     df = pd.read_csv(filename, index_col=0)
 
     # Convert all int64 columns to float so db doesn't get conflicting datatypes
@@ -146,7 +146,7 @@ def upload_file():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
-            file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
+            file.save(os.path.join(UPLOAD_FOLDER, filename))
             upload_file_to_influxdb(file.filename, 'airu_offline', 'airQuality')
 
             # return redirect(url_for('uploaded_file', filename=filename))
