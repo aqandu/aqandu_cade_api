@@ -132,7 +132,7 @@ def upload_file_to_influxdb(filename, database, measurement):
     client.write_points(dataframe=df, measurement=measurement, tag_columns=tagKeys, field_columns=fieldKeys)
 
 
-@influx.route('/uploadcsv', methods=['POST'])
+@influx.route('/uploadcsv', methods=['GET', 'POST'])
 def upload_file():
     LOGGER.info('Route /uploadcsv was called. Inside upload_file()')
     if request.method == 'POST':
