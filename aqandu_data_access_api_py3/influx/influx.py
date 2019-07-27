@@ -135,7 +135,7 @@ def upload_file_to_influxdb(filename, database, measurement):
 @influx.route('/uploadcsv', methods=['GET', 'POST'])
 def upload_file():
     LOGGER.info('Route /uploadcsv was called. Inside upload_file()')
-    LOGGER.info('Current working directory:', os.getcwd())
+    LOGGER.info('Current working directory: %s' % os.getcwd())
     if request.method == 'POST':
         # check if the post request has the file part
         if 'file' not in request.files:
