@@ -3,11 +3,13 @@ import time
 
 from datetime import datetime, timedelta
 from flask import jsonify, request, Blueprint, redirect, render_template, url_for, make_response
+from werkzeug.utils import secure_filename
 from influxdb import InfluxDBClient, DataFrameClient
 from pymongo import MongoClient
 
 import pandas as pd
 import numpy as np
+import os
 
 import logging
 
@@ -79,6 +81,84 @@ lookupParameterToAirUInflux = {
     'co': 'CO',
     'no': 'NO'
 }
+
+UPLOAD_FOLDER = './uploads'
+ALLOWED_EXTENSIONS = {'csv'}
+current_app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+current_app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+
+
+def allowed_file(filename):
+    return '.' in filename and \
+            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
+def upload_file_to_influxdb(filename, database, measurement):
+
+    client = DataFrameClient(host='air.eng.utah.edu',
+                             port=8086,
+                             username='tBecnel',
+                             password='VaH6cCsBeML88kSg',
+                             database=database,
+                             ssl=True,
+                             verify_ssl=True)
+
+    filename = current_app.config['UPLOAD_FOLDER'] + '/' + filename
+    df = pd.read_csv(filename, index_col=0)
+
+    # Convert all int64 columns to float so db doesn't get conflicting datatypes
+    for k in df.keys():
+        if df[k].dtype == np.int64:
+            df[k] = df[k].astype(float)
+
+    # Convert index to datetime
+    df.index = pd.to_datetime(df.index, format='%Y-%m-%d %H:%M:%S.%f')
+
+    # Add nanosecond noise between +/- 1 second to make sure we don't have collisions
+    # because SD card only goes to second precision
+    td = np.random.uniform(-1e9, 1e9, len(df)).astype('timedelta64[ns]')
+    df.index += td
+
+    # Get the Tag Values from the InfluxDB Measurement
+    # tagKeys = ['ID', 'SensorModel', 'topic', 'Source']
+    rs = client.query(query='show tag keys from airQuality;show field keys from airQuality')
+    tagKeys = list(set([i['tagKey'] for i in rs[0].get_points(measurement=measurement)] + ['Source']))
+
+    # Get the Field Values from the InfluxDB Measurement
+    fieldKeys = [i['fieldKey'] for i in rs[1].get_points(measurement=measurement)]
+
+    # Write the DataFrame to InfluxDB
+    print('About to write:\n', df)
+    client.write_points(dataframe=df, measurement=measurement, tag_columns=tagKeys, field_columns=fieldKeys)
+
+
+@influx.route('/uploadcsv', methods=['POST'])
+def upload_file():
+    if request.method == 'POST':
+        # check if the post request has the file part
+        if 'file' not in request.files:
+            return redirect(request.url)
+        file = request.files['file']
+        # if user does not select file, browser also
+        # submit an empty part without filename
+        if file.filename == '':
+            return redirect(request.url)
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
+            upload_file_to_influxdb(file.filename, 'airu_offline', 'airQuality')
+
+            # return redirect(url_for('uploaded_file', filename=filename))
+    # return
+    return '''
+    <!doctype html>
+    <title>Upload new File</title>
+    <h1>Upload new File</h1>
+    <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+    '''
 
 
 @influx.errorhandler(InvalidUsage)
