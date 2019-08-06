@@ -10602,3 +10602,953 @@
 2019-08-06 07:58:38,380 - aqandu - [getMacToCustomSensorID:2357] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
 2019-08-06 07:58:38,380 - aqandu - [getMacToCustomSensorID:2359] - INFO - ******** getMacToCustomSensorID done ********
 2019-08-06 07:58:38,380 - aqandu - [getLastValuesForLiveSensor:1267] - INFO - *********** lastPM request done ***********
+2019-08-06 08:03:03,380 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:03,380 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-007'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:03,380 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:03,380 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:03,380 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:03,380 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:03,393 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:03,394 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:03,394 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-007'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:03,394 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:03,394 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:03,394 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:03,394 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '606405AA0715' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:03,407 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = '606405AA0715' 
+2019-08-06 08:03:03,423 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.029117345809936523 ***********
+2019-08-06 08:03:03,575 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:03,576 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-012'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:03,576 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:03,576 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:03,576 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:03,576 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:03,586 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:03,587 - aqandu - [getProcessedDataFrom:1060] - INFO - this is an unknow ID, not in db
+2019-08-06 08:03:04,336 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:04,336 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-027'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:04,336 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:04,336 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:04,336 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:04,336 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:04,346 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:04,347 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:04,347 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-027'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:04,347 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:04,347 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:04,347 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:04,347 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EABA28350' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:04,359 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'F45EABA28350' 
+2019-08-06 08:03:04,378 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.031479835510253906 ***********
+2019-08-06 08:03:04,637 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:04,637 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-035'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:04,637 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:04,637 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:04,637 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:04,638 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:04,648 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:04,648 - aqandu - [getProcessedDataFrom:1060] - INFO - this is an unknow ID, not in db
+2019-08-06 08:03:04,800 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:04,801 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-037'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:04,801 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:04,801 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:04,801 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:04,801 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:04,813 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:04,813 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:04,814 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-037'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:04,814 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:04,814 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:04,814 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:04,814 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '9884E320942F' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:04,828 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = '9884E320942F' 
+2019-08-06 08:03:04,848 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.034568071365356445 ***********
+2019-08-06 08:03:04,901 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:04,901 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-039'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:04,901 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:04,901 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:04,901 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:04,902 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:04,912 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:04,912 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:04,913 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-039'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:04,913 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:04,913 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:04,913 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:04,913 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EAB08FDB9' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:04,926 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'F45EAB08FDB9' 
+2019-08-06 08:03:04,947 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.03416037559509277 ***********
+2019-08-06 08:03:05,099 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:05,099 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-041'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:05,099 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:05,099 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:05,099 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:05,099 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:05,110 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:05,110 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:05,110 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-041'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:05,110 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:05,110 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:05,110 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:05,110 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '606405C95AD9' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:05,122 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = '606405C95AD9' 
+2019-08-06 08:03:05,139 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.029192686080932617 ***********
+2019-08-06 08:03:05,507 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:05,507 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-046'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:05,508 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:05,508 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:05,508 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:05,508 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:05,520 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:05,521 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:05,521 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-046'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:05,521 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:05,521 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:05,521 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:05,521 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EABA3325F' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:05,534 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'F45EABA3325F' 
+2019-08-06 08:03:05,555 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.03388810157775879 ***********
+2019-08-06 08:03:05,710 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:05,710 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-052'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:05,710 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:05,710 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:05,710 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:05,710 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:05,721 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:05,721 - aqandu - [getProcessedDataFrom:1060] - INFO - this is an unknow ID, not in db
+2019-08-06 08:03:05,870 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:05,870 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-058'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:05,870 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:05,870 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:05,870 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:05,871 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:05,881 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:05,882 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:05,882 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-058'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:05,882 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:05,882 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:05,882 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:05,882 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EAB9C4660' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:05,893 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'F45EAB9C4660' 
+2019-08-06 08:03:05,917 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.034699440002441406 ***********
+2019-08-06 08:03:05,978 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:05,978 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-059'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:05,978 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:05,978 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:05,978 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:05,978 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:05,989 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:05,989 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:05,989 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-059'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:05,989 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:05,989 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:05,989 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:05,989 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '9884E32091E7' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:06,002 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = '9884E32091E7' 
+2019-08-06 08:03:06,023 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.03322792053222656 ***********
+2019-08-06 08:03:06,077 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:06,077 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-063'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,077 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:06,077 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:06,077 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:06,078 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:06,093 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:06,093 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:06,093 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-063'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,093 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:06,093 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:06,093 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:06,093 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EAB95EA05' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:06,109 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'F45EAB95EA05' 
+2019-08-06 08:03:06,131 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.037845611572265625 ***********
+2019-08-06 08:03:06,250 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:06,251 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-069'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,251 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:06,251 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:06,251 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:06,251 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:06,261 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:06,261 - aqandu - [getProcessedDataFrom:1060] - INFO - this is an unknow ID, not in db
+2019-08-06 08:03:06,377 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:06,377 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-075'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,377 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:06,378 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:06,378 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:06,378 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:06,390 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:06,390 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:06,390 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-075'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,390 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:06,391 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:06,391 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:06,391 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '5065832739C9' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:06,553 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:06,553 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-077'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,553 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:06,553 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:06,553 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:06,554 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:06,567 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:06,568 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:06,568 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-077'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,568 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:06,568 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:06,568 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:06,568 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'A81B6A7B1BA5' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:06,584 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'A81B6A7B1BA5' 
+2019-08-06 08:03:06,606 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.03838706016540527 ***********
+2019-08-06 08:03:06,660 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:06,660 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-079'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,660 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:06,660 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:06,660 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:06,660 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:06,672 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:06,672 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:06,672 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-079'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,672 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:06,672 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:06,672 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:06,672 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'A81B6A78075B' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:06,698 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'A81B6A78075B' 
+2019-08-06 08:03:06,728 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.056054115295410156 ***********
+2019-08-06 08:03:06,885 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:06,885 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-081'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,885 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:06,885 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:06,885 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:06,886 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:06,897 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:06,897 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:06,897 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-081'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:06,897 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:06,897 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:06,897 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:06,897 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '9884E31FE809' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:07,041 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:07,042 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-083'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:07,042 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:07,042 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:07,042 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:07,042 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:07,053 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:07,053 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:07,053 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-083'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:07,053 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:07,053 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:07,053 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:07,053 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EAB9BFF21' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:07,066 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'F45EAB9BFF21' 
+2019-08-06 08:03:07,087 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.033828020095825195 ***********
+2019-08-06 08:03:07,713 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:07,714 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-094'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:07,714 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:07,714 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:07,714 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:07,714 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:07,725 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:07,725 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:07,725 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-094'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:07,725 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:07,725 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:07,725 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:07,725 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'A81B6A641C8B' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:07,740 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'A81B6A641C8B' 
+2019-08-06 08:03:07,763 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.03737497329711914 ***********
+2019-08-06 08:03:07,984 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:07,984 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-112'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:07,984 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:07,984 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:07,984 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:07,985 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:07,995 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:07,995 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:07,995 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-112'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:07,996 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:07,996 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:07,996 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:07,996 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EAB9F7148' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:08,017 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'F45EAB9F7148' 
+2019-08-06 08:03:08,042 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.04571342468261719 ***********
+2019-08-06 08:03:08,096 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:08,096 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-116'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,096 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:08,096 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:08,096 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:08,096 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:08,108 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:08,108 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:08,108 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-116'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,108 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:08,108 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:08,108 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:08,108 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '9884E320960B' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:08,121 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = '9884E320960B' 
+2019-08-06 08:03:08,148 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.039530038833618164 ***********
+2019-08-06 08:03:08,203 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:08,203 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-123'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,203 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:08,203 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:08,203 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:08,203 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:08,214 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:08,214 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:08,214 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-123'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,214 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:08,214 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:08,214 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:08,214 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'A81B6A7A633E' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:08,230 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'A81B6A7A633E' 
+2019-08-06 08:03:08,247 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.032198429107666016 ***********
+2019-08-06 08:03:08,395 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:08,395 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-131'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,395 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:08,395 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:08,395 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:08,396 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:08,406 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:08,406 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:08,406 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-131'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,406 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:08,406 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:08,406 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:08,406 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EABA58AC9' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:08,419 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'F45EABA58AC9' 
+2019-08-06 08:03:08,440 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.034108877182006836 ***********
+2019-08-06 08:03:08,589 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:08,589 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-138'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,589 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:08,589 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:08,589 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:08,590 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:08,602 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:08,602 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:08,602 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-138'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,602 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:08,602 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:08,602 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:08,602 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '9884E3206135' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:08,770 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:08,771 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-141'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,771 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:08,771 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:08,771 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:08,771 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:08,782 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:08,782 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:08,782 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-141'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,782 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:08,782 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:08,782 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:08,782 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EAB9C02DC' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:08,806 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'F45EAB9C02DC' 
+2019-08-06 08:03:08,838 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.05536031723022461 ***********
+2019-08-06 08:03:08,894 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:08,894 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-142'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:08,894 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:08,894 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:08,894 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:08,894 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:08,905 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:08,905 - aqandu - [getProcessedDataFrom:1060] - INFO - this is an unknow ID, not in db
+2019-08-06 08:03:09,063 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:09,064 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-146'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:09,064 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:09,064 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:09,064 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:09,064 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:09,075 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:09,075 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:09,075 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-146'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:09,075 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:09,075 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:09,075 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:09,075 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '606405CA2492' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:09,088 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = '606405CA2492' 
+2019-08-06 08:03:09,106 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.03046441078186035 ***********
+2019-08-06 08:03:09,272 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:09,272 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-152'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:09,272 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:09,272 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:09,272 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:09,273 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:09,283 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:09,283 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:09,283 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-152'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:09,283 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:09,284 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:09,284 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:09,284 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '606405AA0DCC' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:09,296 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = '606405AA0DCC' 
+2019-08-06 08:03:09,316 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.03208637237548828 ***********
+2019-08-06 08:03:09,471 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:09,472 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-160'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:09,472 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:09,472 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:09,472 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:09,472 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:09,483 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:09,483 - aqandu - [getProcessedDataFrom:1060] - INFO - this is an unknow ID, not in db
+2019-08-06 08:03:09,645 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:09,646 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-162'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:09,646 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:09,646 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:09,646 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:09,646 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:09,657 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:09,658 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:09,658 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-162'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:09,658 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:09,658 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:09,658 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:09,658 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = '606405CA1EA4' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:09,804 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:09,804 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-167'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:09,804 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:09,804 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:09,804 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:09,805 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:09,815 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:09,815 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:09,815 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-167'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:09,815 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:09,815 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:09,815 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:09,815 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EAB08F7A5' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:10,138 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:10,138 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-178'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:10,138 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:10,139 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:10,139 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:10,139 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:10,149 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:10,149 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:10,149 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-178'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:10,149 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:10,149 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:10,149 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:10,150 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'F45EABA27BB6' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:10,161 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'F45EABA27BB6' 
+2019-08-06 08:03:10,181 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.030977249145507812 ***********
+2019-08-06 08:03:10,234 - aqandu - [getProcessedDataFrom:1033] - INFO - *********** processedDataFrom request started ***********
+2019-08-06 08:03:10,234 - aqandu - [getProcessedDataFrom:1036] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-179'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:10,235 - aqandu - [getProcessedDataFrom:1039] - INFO - 05m
+2019-08-06 08:03:10,235 - aqandu - [getProcessedDataFrom:1042] - INFO - airu
+2019-08-06 08:03:10,235 - aqandu - [getProcessedDataFrom:1043] - INFO - airu
+2019-08-06 08:03:10,235 - aqandu - [getCustomSensorIDToMAC:2365] - INFO - ******** getMacToCustomSensorIDToMac STARTED ********
+2019-08-06 08:03:10,245 - aqandu - [getCustomSensorIDToMAC:2384] - INFO - ******** getMacToCustomSensorIDToMac DONE ********
+2019-08-06 08:03:10,245 - aqandu - [getProcessedDataFrom:1070] - INFO - does it go on
+2019-08-06 08:03:10,246 - aqandu - [createSelection:2255] - INFO - ImmutableMultiDict([('functionArg', 'pm25'), ('sensorSource', 'airu'), ('end', '2019-08-06T14:05:00Z'), ('id', 'S-A-179'), ('function', 'mean'), ('timeInterval', '05m'), ('start', '2019-08-06T13:05:00Z')])
+2019-08-06 08:03:10,246 - aqandu - [createSelection:2301] - INFO - pm25
+2019-08-06 08:03:10,246 - aqandu - [createSelection:2302] - INFO - "PM2.5"
+2019-08-06 08:03:10,246 - aqandu - [getProcessedDataFrom:1072] - INFO - mean("PM2.5") AS pm25 FROM pm25
+2019-08-06 08:03:10,246 - aqandu - [getProcessedDataFrom:1079] - INFO - SELECT mean("PM2.5") AS pm25 FROM pm25 WHERE ID = 'A81B6A7B1AB2' AND time >= '2019-08-06T13:05:00Z' AND time <= '2019-08-06T14:05:00Z' GROUP BY time(05m, 05m)
+2019-08-06 08:03:10,258 - aqandu - [getProcessedDataFrom:1101] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 WHERE ID = 'A81B6A7B1AB2' 
+2019-08-06 08:03:10,273 - aqandu - [getProcessedDataFrom:1186] - INFO - *********** Time to download: 0.027012348175048828 ***********
+2019-08-06 08:03:34,636 - aqandu - [getLastValuesForLiveSensor:1198] - INFO - *********** lastPM request started ***********
+2019-08-06 08:03:34,636 - aqandu - [getLastValuesForLiveSensor:1209] - INFO - pm25
+2019-08-06 08:03:34,636 - aqandu - [getLastValuesForLiveSensor:1212] - INFO - SELECT LAST("pm2.5 (ug/m^3)"), ID, "Sensor Model", "Sensor Source" FROM airQuality GROUP BY ID
+2019-08-06 08:03:38,997 - aqandu - [getLastValuesForLiveSensor:1232] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 GROUP BY ID
+2019-08-06 08:03:39,469 - aqandu - [getMacToCustomSensorID:2338] - INFO - ******** getMacToCustomSensorID started ********
+2019-08-06 08:03:39,479 - aqandu - [getMacToCustomSensorID:2357] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
+2019-08-06 08:03:39,480 - aqandu - [getMacToCustomSensorID:2359] - INFO - ******** getMacToCustomSensorID done ********
+2019-08-06 08:03:39,480 - aqandu - [getLastValuesForLiveSensor:1267] - INFO - *********** lastPM request done ***********
+2019-08-06 08:05:17,825 - aqandu - [getLiveSensors:439] - INFO - *********** liveSensors request started ***********
+2019-08-06 08:05:17,825 - aqandu - [getLiveSensors:440] - INFO - airU
+2019-08-06 08:05:17,825 - aqandu - [getLiveSensors:462] - INFO - 2019-08-06T10:05:17Z
+2019-08-06 08:05:17,825 - aqandu - [getLiveSensors:465] - INFO - 2019-08-06T13:45:17Z
+2019-08-06 08:05:17,825 - aqandu - [getLiveSensors:468] - INFO - 2019-08-06T14:00:17Z
+2019-08-06 08:05:17,825 - aqandu - [getInfluxAirUSensors:2446] - INFO - ******** influx airU started ********
+2019-08-06 08:05:17,852 - aqandu - [getInfluxAirUSensors:2451] - INFO - 85
+2019-08-06 08:05:17,852 - aqandu - [getMacToCustomSensorID:2338] - INFO - ******** getMacToCustomSensorID started ********
+2019-08-06 08:05:17,870 - aqandu - [getMacToCustomSensorID:2357] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
+2019-08-06 08:05:17,870 - aqandu - [getMacToCustomSensorID:2359] - INFO - ******** getMacToCustomSensorID done ********
+2019-08-06 08:05:17,870 - aqandu - [getInfluxAirUSensors:2463] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
+2019-08-06 08:05:17,870 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:17,882 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:17,882 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:17,910 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:17,910 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:17,939 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:17,939 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:17,954 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:17,954 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:17,975 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:17,975 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,002 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,002 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,019 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,019 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,032 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,032 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,049 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,050 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,075 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,075 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,088 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,088 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,162 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,162 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,191 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,192 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,220 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,220 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,328 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,329 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,346 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,346 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,363 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,363 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,480 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,481 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,502 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,502 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,538 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,538 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,562 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,562 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,579 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,580 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,601 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,601 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,639 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,639 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,661 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,661 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,679 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,679 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,704 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,704 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,730 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,730 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,761 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,761 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,799 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,799 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,816 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,816 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,831 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,831 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,850 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,850 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,863 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,863 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,874 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,875 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,896 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,896 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,909 - aqandu - [getInfluxAirUSensors:2483] - INFO - 9884E31FE809 missing latitude
+2019-08-06 08:05:18,909 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,921 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,921 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,944 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,944 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:18,963 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:18,963 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:18,976 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:18,976 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:18,990 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:18,990 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,016 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,017 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,030 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,030 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,062 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,062 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,086 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,086 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,098 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,098 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,119 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,119 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,138 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,139 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,150 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,151 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,163 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,163 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,181 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,182 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,207 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,207 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,220 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,220 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,241 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,241 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,254 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,254 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,269 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,269 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,291 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,291 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,307 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,307 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,318 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,319 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,339 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,339 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,385 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,385 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,423 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,423 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,444 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,444 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,463 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,463 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,502 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,505 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,678 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,678 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,714 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,714 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,751 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,751 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,842 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,842 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,856 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,857 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,880 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,880 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,895 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,895 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,910 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,910 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,931 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,931 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:19,947 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:19,947 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:19,966 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:19,967 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:19,980 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:19,980 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,000 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,001 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,019 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,019 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,031 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,031 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,047 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,047 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,059 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,060 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,071 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,071 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,090 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,090 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,103 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,103 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,115 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,115 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,132 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,132 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,144 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,144 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,156 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,156 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,171 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,172 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,185 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,185 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,205 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,205 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,221 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,221 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,232 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,232 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,246 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,246 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,260 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,260 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,271 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,271 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,294 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,294 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,312 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,312 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,324 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,324 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,337 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,337 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,357 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,358 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,369 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,369 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,382 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,382 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,410 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,410 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,433 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,433 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,453 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,453 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,488 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,488 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,509 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,509 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,525 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,525 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,563 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,563 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,599 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,599 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,620 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,621 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,665 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,665 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,707 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,707 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,725 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,725 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,760 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,760 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,778 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,778 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,809 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,809 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,830 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,830 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,848 - aqandu - [getInfluxAirUSensors:2483] - INFO - F45EAB08F7A5 missing latitude
+2019-08-06 08:05:20,848 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,869 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,869 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,897 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,897 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,919 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,919 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,939 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,939 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:20,964 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:20,964 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:20,981 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:20,981 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:20,993 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:20,993 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,005 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,005 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,038 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,038 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,052 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,053 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,065 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,065 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,094 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,094 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,107 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,107 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,120 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,120 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,134 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,134 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,148 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,148 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,164 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,164 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,183 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,183 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,206 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,206 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,257 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,257 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,286 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,287 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,308 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,308 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,345 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,345 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,377 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,377 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,392 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,393 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,421 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,421 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,474 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,474 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,488 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,488 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,550 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,550 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,599 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,599 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,616 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,616 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,634 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,634 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,691 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,692 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,737 - aqandu - [getInfluxAirUSensors:2483] - INFO - 606405AA0C2A missing latitude
+2019-08-06 08:05:21,737 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,757 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,757 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,785 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,785 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,809 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,809 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,824 - aqandu - [getInfluxAirUSensors:2483] - INFO - F45EAB9F74E4 missing latitude
+2019-08-06 08:05:21,824 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,846 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,846 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,868 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,868 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,880 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,880 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,891 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,891 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,903 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,903 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,919 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,919 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,944 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,944 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:21,955 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:21,955 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:21,972 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:21,973 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:21,984 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:21,984 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,003 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,003 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,017 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,017 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,028 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,028 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,040 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,040 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,064 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,065 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,084 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,084 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,111 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,111 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,126 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,127 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,147 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,147 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,169 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,169 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,192 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,192 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,214 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,214 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,227 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,227 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,244 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,244 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,257 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,257 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,270 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,270 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,286 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,286 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,300 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,300 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,313 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,313 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,330 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,330 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,342 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,342 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,355 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,355 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,397 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,397 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,411 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,411 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,462 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,462 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,490 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,490 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,507 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,507 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,532 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,532 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,556 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,556 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,576 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,576 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,599 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,599 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,632 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,632 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,653 - aqandu - [getInfluxAirUSensors:2483] - INFO - A81B6A7A6157 missing latitude
+2019-08-06 08:05:22,654 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,666 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,666 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,679 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,679 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,694 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,694 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,706 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,706 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,718 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,719 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,733 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,733 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,746 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,747 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,759 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,759 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,774 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,775 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,787 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,787 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,800 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,800 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,818 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,818 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,829 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,830 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,842 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,842 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,859 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,859 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,871 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,871 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,884 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,884 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,901 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,901 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,918 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,918 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,931 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,931 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:22,946 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:22,946 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:22,964 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:22,964 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:22,985 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:22,985 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:23,006 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:23,006 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:23,019 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:23,019 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:23,033 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:23,033 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:23,059 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:23,059 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:23,077 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:23,077 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:23,090 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:23,090 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:23,106 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:23,106 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:23,129 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:23,129 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:23,144 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:23,144 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:23,168 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:23,168 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:23,190 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:23,190 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:23,207 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:23,208 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:23,226 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:23,226 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:23,239 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:05:23,239 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:05:23,257 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:05:23,257 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:05:23,299 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:05:23,299 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:05:23,314 - aqandu - [getInfluxAirUSensors:2483] - INFO - F45EABA3325F missing latitude
+2019-08-06 08:05:23,315 - aqandu - [getInfluxAirUSensors:2544] - INFO - ******** influx airU done ********
+2019-08-06 08:05:23,316 - aqandu - [getLiveSensors:492] - INFO - 77
