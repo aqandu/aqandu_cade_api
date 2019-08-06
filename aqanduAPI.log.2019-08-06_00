@@ -11552,3 +11552,1040 @@
 2019-08-06 08:05:23,314 - aqandu - [getInfluxAirUSensors:2483] - INFO - F45EABA3325F missing latitude
 2019-08-06 08:05:23,315 - aqandu - [getInfluxAirUSensors:2544] - INFO - ******** influx airU done ********
 2019-08-06 08:05:23,316 - aqandu - [getLiveSensors:492] - INFO - 77
+2019-08-06 08:07:31,102 - aqandu - [getLastValuesForLiveSensor:1198] - INFO - *********** lastPM request started ***********
+2019-08-06 08:07:31,103 - aqandu - [getLastValuesForLiveSensor:1209] - INFO - pm25
+2019-08-06 08:07:31,103 - aqandu - [getLastValuesForLiveSensor:1212] - INFO - SELECT LAST("pm2.5 (ug/m^3)"), ID, "Sensor Model", "Sensor Source" FROM airQuality GROUP BY ID
+2019-08-06 08:07:34,763 - aqandu - [getLastValuesForLiveSensor:1232] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 GROUP BY ID
+2019-08-06 08:07:35,269 - aqandu - [getMacToCustomSensorID:2338] - INFO - ******** getMacToCustomSensorID started ********
+2019-08-06 08:07:35,278 - aqandu - [getMacToCustomSensorID:2357] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
+2019-08-06 08:07:35,279 - aqandu - [getMacToCustomSensorID:2359] - INFO - ******** getMacToCustomSensorID done ********
+2019-08-06 08:07:35,279 - aqandu - [getLastValuesForLiveSensor:1267] - INFO - *********** lastPM request done ***********
+2019-08-06 08:08:37,873 - aqandu - [getLastValuesForLiveSensor:1198] - INFO - *********** lastPM request started ***********
+2019-08-06 08:08:37,873 - aqandu - [getLastValuesForLiveSensor:1209] - INFO - pm25
+2019-08-06 08:08:37,873 - aqandu - [getLastValuesForLiveSensor:1212] - INFO - SELECT LAST("pm2.5 (ug/m^3)"), ID, "Sensor Model", "Sensor Source" FROM airQuality GROUP BY ID
+2019-08-06 08:08:41,392 - aqandu - [getLastValuesForLiveSensor:1232] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 GROUP BY ID
+2019-08-06 08:08:41,946 - aqandu - [getMacToCustomSensorID:2338] - INFO - ******** getMacToCustomSensorID started ********
+2019-08-06 08:08:41,956 - aqandu - [getMacToCustomSensorID:2357] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
+2019-08-06 08:08:41,956 - aqandu - [getMacToCustomSensorID:2359] - INFO - ******** getMacToCustomSensorID done ********
+2019-08-06 08:08:41,957 - aqandu - [getLastValuesForLiveSensor:1267] - INFO - *********** lastPM request done ***********
+2019-08-06 08:08:47,080 - aqandu - [getLastValuesForLiveSensor:1198] - INFO - *********** lastPM request started ***********
+2019-08-06 08:08:47,080 - aqandu - [getLastValuesForLiveSensor:1209] - INFO - pm25
+2019-08-06 08:08:47,081 - aqandu - [getLastValuesForLiveSensor:1212] - INFO - SELECT LAST("pm2.5 (ug/m^3)"), ID, "Sensor Model", "Sensor Source" FROM airQuality GROUP BY ID
+2019-08-06 08:08:50,891 - aqandu - [getLastValuesForLiveSensor:1232] - INFO - SELECT LAST("PM2.5"), ID, "SensorModel" FROM pm25 GROUP BY ID
+2019-08-06 08:08:51,527 - aqandu - [getMacToCustomSensorID:2338] - INFO - ******** getMacToCustomSensorID started ********
+2019-08-06 08:08:51,537 - aqandu - [getMacToCustomSensorID:2357] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
+2019-08-06 08:08:51,537 - aqandu - [getMacToCustomSensorID:2359] - INFO - ******** getMacToCustomSensorID done ********
+2019-08-06 08:08:51,537 - aqandu - [getLastValuesForLiveSensor:1267] - INFO - *********** lastPM request done ***********
+2019-08-06 08:08:51,944 - aqandu - [getLiveSensors:439] - INFO - *********** liveSensors request started ***********
+2019-08-06 08:08:51,944 - aqandu - [getLiveSensors:440] - INFO - airU
+2019-08-06 08:08:51,944 - aqandu - [getLiveSensors:462] - INFO - 2019-08-06T10:08:51Z
+2019-08-06 08:08:51,944 - aqandu - [getLiveSensors:465] - INFO - 2019-08-06T13:48:51Z
+2019-08-06 08:08:51,944 - aqandu - [getLiveSensors:468] - INFO - 2019-08-06T14:03:51Z
+2019-08-06 08:08:51,945 - aqandu - [getInfluxAirUSensors:2446] - INFO - ******** influx airU started ********
+2019-08-06 08:08:51,954 - aqandu - [getInfluxAirUSensors:2451] - INFO - 85
+2019-08-06 08:08:51,954 - aqandu - [getMacToCustomSensorID:2338] - INFO - ******** getMacToCustomSensorID started ********
+2019-08-06 08:08:51,964 - aqandu - [getMacToCustomSensorID:2357] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
+2019-08-06 08:08:51,964 - aqandu - [getMacToCustomSensorID:2359] - INFO - ******** getMacToCustomSensorID done ********
+2019-08-06 08:08:51,964 - aqandu - [getInfluxAirUSensors:2463] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
+2019-08-06 08:08:51,964 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:51,974 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:51,974 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:51,986 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:51,986 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,004 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,004 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,015 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,015 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,025 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,026 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,042 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,042 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,053 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,053 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,064 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,064 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,081 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,081 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,092 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,092 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,103 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,103 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,120 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,120 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,131 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,131 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,142 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,142 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,158 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,158 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,169 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,169 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,180 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,180 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,196 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,196 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,207 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,207 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,220 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,220 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,236 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,237 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,248 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,248 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,259 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,259 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,276 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,276 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,288 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,288 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,299 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,299 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,315 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,315 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,329 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,329 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,340 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,340 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,357 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,357 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,369 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,369 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,381 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,381 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,399 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,399 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,411 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,411 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,422 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,422 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,437 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,437 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,454 - aqandu - [getInfluxAirUSensors:2483] - INFO - 9884E31FE809 missing latitude
+2019-08-06 08:08:52,455 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,468 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,468 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,481 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,481 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,497 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,498 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,510 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,510 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,522 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,522 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,536 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,536 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,549 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,549 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,562 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,563 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,579 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,579 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,600 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,600 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,612 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,612 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,631 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,632 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,645 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,645 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,659 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,659 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,683 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,683 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,695 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,696 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,707 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,707 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,725 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,725 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,736 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,736 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,747 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,747 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,762 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,762 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,773 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,773 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,788 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,788 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,808 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,808 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,820 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,820 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,833 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,833 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,852 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,852 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,864 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,864 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,875 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,876 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,906 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,907 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,919 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,919 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,932 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,932 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,950 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,950 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:52,962 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:52,962 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:52,974 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:52,974 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:52,989 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:52,989 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,001 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,001 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,012 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,012 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,028 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,028 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,039 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,039 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,050 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,050 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,067 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,068 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,079 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,079 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,092 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,092 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,108 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,108 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,121 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,121 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,147 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,147 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,222 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,222 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,237 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,237 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,254 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,254 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,314 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,315 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,327 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,328 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,342 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,342 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,374 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,374 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,387 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,387 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,413 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,413 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,441 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,441 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,458 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,458 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,482 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,482 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,499 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,499 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,511 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,511 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,530 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,530 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,548 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,548 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,561 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,561 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,574 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,574 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,596 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,596 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,608 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,608 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,620 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,620 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,637 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,637 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,649 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,649 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,668 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,668 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,684 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,684 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,697 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,697 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,711 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,711 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,730 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,730 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,743 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,744 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,761 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,761 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,781 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,782 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,796 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,796 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,809 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,809 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,828 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,828 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,840 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,840 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,853 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,854 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,873 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,873 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,888 - aqandu - [getInfluxAirUSensors:2483] - INFO - F45EAB08F7A5 missing latitude
+2019-08-06 08:08:53,889 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,901 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,901 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,914 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,914 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,931 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,931 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,945 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,945 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:53,957 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:53,960 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:53,977 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:53,977 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:53,989 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:53,989 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,001 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,001 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,019 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,019 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,046 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,046 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,072 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,072 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,089 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,089 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,104 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,104 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,122 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,122 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,140 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,140 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,161 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,161 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,174 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,174 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,193 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,194 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,208 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,208 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,221 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,221 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,236 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,236 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,248 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,248 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,265 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,265 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,280 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,280 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,293 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,293 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,304 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,304 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,323 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,323 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,334 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,334 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,346 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,346 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,362 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,362 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,374 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,374 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,388 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,388 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,403 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,403 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,416 - aqandu - [getInfluxAirUSensors:2483] - INFO - 606405AA0C2A missing latitude
+2019-08-06 08:08:54,416 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,429 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,430 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,442 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,442 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,458 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,459 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,471 - aqandu - [getInfluxAirUSensors:2483] - INFO - F45EAB9F74E4 missing latitude
+2019-08-06 08:08:54,471 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,483 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,483 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,495 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,495 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,512 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,512 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,525 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,525 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,537 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,537 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,552 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,552 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,565 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,565 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,579 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,579 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,621 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,621 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,645 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,646 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,661 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,662 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,684 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,684 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,706 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,706 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,727 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,727 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,763 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,763 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,784 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,784 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,798 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,798 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,827 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,827 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,842 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,842 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,862 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,862 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,885 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,885 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,899 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,899 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,914 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,914 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:54,950 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:54,950 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:54,964 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:54,965 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:54,987 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:54,987 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,005 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,005 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,018 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,018 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,030 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,030 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,047 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,047 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,066 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,066 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,081 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,081 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,097 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,097 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,118 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,118 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,136 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,137 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,157 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,158 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,172 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,173 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,186 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,186 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,208 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,208 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,232 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,232 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,247 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,247 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,265 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,266 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,283 - aqandu - [getInfluxAirUSensors:2483] - INFO - A81B6A7A6157 missing latitude
+2019-08-06 08:08:55,283 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,297 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,297 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,323 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,323 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,342 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,342 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,360 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,360 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,374 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,374 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,392 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,392 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,406 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,406 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,419 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,419 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,439 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,440 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,454 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,455 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,476 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,476 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,498 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,498 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,517 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,517 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,537 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,537 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,562 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,562 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,582 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,582 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,605 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,605 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,630 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,630 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,649 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,650 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,663 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,663 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,689 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,689 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,705 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,705 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,721 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,721 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,740 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,740 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,753 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,753 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,765 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,765 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,781 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,781 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,794 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,794 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,807 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,807 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,824 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,824 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,838 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,838 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,850 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,851 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,868 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,868 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,881 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,881 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,893 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,894 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,909 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,910 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,923 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:08:55,923 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:08:55,938 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:08:55,938 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:08:55,958 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:08:55,958 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:08:55,980 - aqandu - [getInfluxAirUSensors:2483] - INFO - F45EABA3325F missing latitude
+2019-08-06 08:08:55,980 - aqandu - [getInfluxAirUSensors:2544] - INFO - ******** influx airU done ********
+2019-08-06 08:08:55,981 - aqandu - [getLiveSensors:492] - INFO - 77
+2019-08-06 08:10:02,107 - aqandu - [getLiveSensors:439] - INFO - *********** liveSensors request started ***********
+2019-08-06 08:10:02,107 - aqandu - [getLiveSensors:440] - INFO - all
+2019-08-06 08:10:02,107 - aqandu - [getLiveSensors:462] - INFO - 2019-08-06T10:10:02Z
+2019-08-06 08:10:02,107 - aqandu - [getLiveSensors:465] - INFO - 2019-08-06T13:50:02Z
+2019-08-06 08:10:02,107 - aqandu - [getLiveSensors:468] - INFO - 2019-08-06T14:05:02Z
+2019-08-06 08:10:02,107 - aqandu - [getLiveSensors:497] - INFO - get all dataSeries started
+2019-08-06 08:10:02,107 - aqandu - [getInfluxPollingSensors:2397] - INFO - ******** influx polling started ********
+2019-08-06 08:10:02,107 - aqandu - [getInfluxPollingSensors:2412] - INFO - SELECT ID, "Sensor Source", Latitude, Longitude, LAST("pm2.5 (ug/m^3)") AS pm25, "Sensor Model" FROM airQuality WHERE time >= '2019-08-06T14:05:02Z' and "Sensor Source" = 'Purple Air' GROUP BY ID, Latitude, Longitude, "Sensor Source"LIMIT 400
+2019-08-06 08:10:02,217 - aqandu - [getInfluxPollingSensors:2439] - INFO - ******** influx polling done ********
+2019-08-06 08:10:02,218 - aqandu - [getLiveSensors:500] - INFO - length of dataSeries_purpleAir is 360
+2019-08-06 08:10:02,218 - aqandu - [getInfluxPollingSensors:2397] - INFO - ******** influx polling started ********
+2019-08-06 08:10:02,219 - aqandu - [getInfluxPollingSensors:2412] - INFO - SELECT ID, "Sensor Source", Latitude, Longitude, LAST("pm2.5 (ug/m^3)") AS pm25, "Sensor Model" FROM airQuality WHERE time >= '2019-08-06T13:50:02Z' and "Sensor Source" = 'Mesowest' GROUP BY ID, Latitude, Longitude, "Sensor Source"LIMIT 400
+2019-08-06 08:10:02,237 - aqandu - [getInfluxPollingSensors:2439] - INFO - ******** influx polling done ********
+2019-08-06 08:10:02,238 - aqandu - [getLiveSensors:503] - INFO - length of dataSeries_mesowest is 1
+2019-08-06 08:10:02,239 - aqandu - [getInfluxPollingSensors:2397] - INFO - ******** influx polling started ********
+2019-08-06 08:10:02,239 - aqandu - [getInfluxPollingSensors:2412] - INFO - SELECT ID, "Sensor Source", Latitude, Longitude, LAST("pm2.5 (ug/m^3)") AS pm25, "Sensor Model" FROM airQuality WHERE time >= '2019-08-06T10:10:02Z' and "Sensor Source" = 'DAQ' GROUP BY ID, Latitude, Longitude, "Sensor Source"LIMIT 400
+2019-08-06 08:10:02,275 - aqandu - [getInfluxPollingSensors:2439] - INFO - ******** influx polling done ********
+2019-08-06 08:10:02,280 - aqandu - [getLiveSensors:506] - INFO - length of dataSeries_DAQ is 7
+2019-08-06 08:10:02,281 - aqandu - [getInfluxAirUSensors:2446] - INFO - ******** influx airU started ********
+2019-08-06 08:10:02,311 - aqandu - [getInfluxAirUSensors:2451] - INFO - 85
+2019-08-06 08:10:02,311 - aqandu - [getMacToCustomSensorID:2338] - INFO - ******** getMacToCustomSensorID started ********
+2019-08-06 08:10:02,321 - aqandu - [getMacToCustomSensorID:2357] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
+2019-08-06 08:10:02,321 - aqandu - [getMacToCustomSensorID:2359] - INFO - ******** getMacToCustomSensorID done ********
+2019-08-06 08:10:02,321 - aqandu - [getInfluxAirUSensors:2463] - INFO - {'A81B6A7B1AB2': 'S-A-179', 'A81B6A64D32A': 'S-A-033', 'A81B6A7AF0DD': 'S-A-053', '606405AA0A30': 'S-A-170', '209148E036E8': 'S-A-133', '606405AA0DDE': 'S-A-089', 'A81B6A7B1B8D': 'S-A-044', '9884E3209447': 'S-A-042', 'F45EAB08FDB9': 'S-A-039', '9884E3209408': 'S-A-144', 'F45EAB934A5E': 'S-A-038', 'A81B6A7A5C74': 'S-A-145', '9884E320942F': 'S-A-037', '606405C9517E': 'S-A-026', '606405AA0C60': 'S-A-168', 'F45EAB95E889': 'S-A-003', 'F45EAB7E9FED': 'S-A-045', '606405C93BC9': 'S-A-139', 'F45EAB95EC49': 'S-A-165', '606405AA0A46': 'S-A-002', '9884E32091E7': 'S-A-059', '606405CA1EA4': 'S-A-162', 'F45EAB9C48F6': 'S-A-034', '606405A9EFF9': 'S-A-074', 'A81B6A7AF310': 'S-A-006', 'F45EAB96FD74': 'S-A-204', '209148E03F8A': 'S-A-047', '209148E036FB': 'S-A-076', 'F45EABA32F2E': 'S-A-095', '506583273009': 'S-A-113', '606405AA0C10': 'S-A-021', 'F45EABA27BB6': 'S-A-178', 'A81B6A7A8497': 'S-A-187', 'F45EABA335D0': 'S-A-025', 'A81B6A7A6116': 'S-A-090', 'F45EAB9F7205': 'S-A-147', 'F45EABA3325F': 'S-A-046', 'F45EAB08F8CD': 'S-A-137', '9884E320973E': 'S-A-198', 'F45EAB9BDDC0': 'S-A-001', 'A81B6A7B1BA5': 'S-A-077', '606405AA0C2A': 'S-A-166', '9884E320940D': 'S-A-088', 'A81B6A78075B': 'S-A-079', 'F45EAB9F7485': 'S-A-120', 'F45EABA28350': 'S-A-027', 'A81B6A7A6321': 'S-A-127', 'F45EABA254AA': 'S-A-024', 'F45EAB9F6E3A': 'S-A-015', '9884E32090BF': 'S-A-122', '9884E31FE631': 'S-A-067', 'F45EAB95EC26': 'S-A-086', '606405C93958': 'S-A-032', 'F45EAB95EA5D': 'S-A-235', '9884E320960B': 'S-A-116', 'F45EAB95EA75': 'S-A-040', 'A81B6A7A633E': 'S-A-123', '606405AA0A11': 'S-A-186', 'F45EAB9C02DC': 'S-A-141', '606405CA407A': 'S-A-135', 'F45EAB08F7A5': 'S-A-167', '9884E3209843': 'S-A-014', '606405C95AD9': 'S-A-041', 'F45EAB95EB7A': 'S-A-096', '606405AA0EE9': 'S-A-082', '606405C9418C': 'S-A-017', '606405C95951': 'S-A-159', 'F45EAB9C4660': 'S-A-058', 'F45EAB9C4EC6': 'S-A-070', 'A81B6A7A6157': 'S-A-164', '606405AA0715': 'S-A-007', '9884E320987A': 'S-A-011', 'F45EAB9F74E4': 'S-A-193', 'F45EAB95ED67': 'S-A-023', '606405CA1DDB': 'S-A-087', '606405CA2492': 'S-A-146', '606405C941B2': 'S-A-157', 'F45EAB95E8DF': 'S-A-161', '30AEA4EFC90C': 'S-A-128', '3C71BF139014': 'S-A-071', '9884E31FEBEE': 'S-A-036', '9884E31FE809': 'S-A-081', '9884E3206135': 'S-A-138', '606405AA093D': 'S-A-031', 'F45EAB9BFF21': 'S-A-083', 'F45EAB9C02DF': 'S-A-150', '606405AA0DCC': 'S-A-152', 'F45EAB81C274': 'S-A-194', '3C71BF153938': 'S-A-210', 'F45EAB95EA05': 'S-A-063', '606405AA0DD8': 'S-A-176', 'F45EAB9BDBDB': 'S-A-030', '3C71BF141248': 'S-A-45', 'F45EABA58AC9': 'S-A-131', 'F45EAB08F6F3': 'S-A-102', '606405AA0722': 'S-A-013', '606405AA0A51': 'S-A-147', 'F45EAB9C466C': 'S-A-005', 'F45EAB9BFE45': 'S-A-080', '5065832739C9': 'S-A-075', 'F45EAB9F7148': 'S-A-112', '606405AA0C73': 'S-A-043', 'F45EAB9C4B54': 'S-A-091', '9884E31FE640': 'S-A-050', 'F45EAB08F6B8': 'S-A-119', 'A81B6A641C8B': 'S-A-094', 'A81B6A7AF580': 'S-A-097'}
+2019-08-06 08:10:02,321 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,333 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,333 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,346 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,346 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:02,367 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:02,368 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,387 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,387 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,406 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,406 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:02,425 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:02,425 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,441 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,441 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,461 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,461 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:02,524 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:02,524 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,540 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,540 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,554 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,554 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:02,591 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:02,591 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,609 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,609 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,622 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,622 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:02,651 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:02,651 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,664 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,665 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,682 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,682 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:02,713 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:02,713 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,736 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,736 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,756 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,756 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:02,779 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:02,780 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,793 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,794 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,813 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,814 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:02,837 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:02,837 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,850 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,850 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,864 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,864 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:02,880 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:02,880 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,896 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,896 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,909 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,909 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:02,934 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:02,934 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:02,958 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:02,958 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:02,978 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:02,978 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,001 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,001 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,013 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,013 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,025 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,025 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,042 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,042 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,066 - aqandu - [getInfluxAirUSensors:2483] - INFO - 9884E31FE809 missing latitude
+2019-08-06 08:10:03,066 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,082 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,082 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,103 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,103 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,123 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,123 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,139 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,139 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,163 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,164 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,183 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,184 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,200 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,200 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,211 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,211 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,229 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,229 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,245 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,246 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,257 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,259 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,288 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,289 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,303 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,303 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,315 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,316 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,335 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,335 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,349 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,349 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,363 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,363 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,379 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,379 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,403 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,403 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,426 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,426 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,448 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,448 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,463 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,463 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,478 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,478 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,500 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,500 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,513 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,513 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,526 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,526 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,549 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,549 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,566 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,566 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,583 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,583 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,600 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,600 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,615 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,615 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,628 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,628 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,649 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,649 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,664 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,664 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,681 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,681 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,697 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,698 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,709 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,709 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,723 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,724 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,744 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,744 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,764 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,765 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,782 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,782 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,803 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,803 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,824 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,824 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,839 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,839 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,859 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,859 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,879 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,879 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,896 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,897 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,918 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,918 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,932 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,932 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:03,950 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:03,950 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:03,970 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:03,970 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:03,984 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:03,984 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,006 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,006 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,024 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,027 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,041 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,041 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,061 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,061 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,081 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,081 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,095 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,095 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,108 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,108 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,131 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,131 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,149 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,149 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,164 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,164 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,184 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,184 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,196 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,196 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,209 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,209 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,228 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,228 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,241 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,241 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,253 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,253 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,273 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,273 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,290 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,290 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,305 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,305 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,326 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,326 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,344 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,344 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,361 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,361 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,381 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,381 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,395 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,395 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,410 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,410 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,430 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,430 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,442 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,442 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,454 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,454 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,471 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,471 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,484 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,484 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,497 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,497 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,515 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,515 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,530 - aqandu - [getInfluxAirUSensors:2483] - INFO - F45EAB08F7A5 missing latitude
+2019-08-06 08:10:04,530 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,544 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,544 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,579 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,579 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,603 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,603 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,626 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,627 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,638 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,638 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,660 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,660 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,674 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,674 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,692 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,692 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,716 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,716 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,737 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,737 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,760 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,760 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,797 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,797 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,817 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,817 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,833 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,833 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:04,856 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:04,857 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:04,919 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:04,919 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:04,947 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:04,947 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,077 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,077 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,099 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,099 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,119 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,119 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,148 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,148 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,160 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,160 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,179 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,179 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,194 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,194 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,206 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,206 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,227 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,227 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,250 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,250 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,263 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,263 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,277 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,277 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,295 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,295 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,306 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,306 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,318 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,318 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,335 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,335 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,351 - aqandu - [getInfluxAirUSensors:2483] - INFO - 606405AA0C2A missing latitude
+2019-08-06 08:10:05,351 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,371 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,371 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,383 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,383 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,404 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,404 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,417 - aqandu - [getInfluxAirUSensors:2483] - INFO - F45EAB9F74E4 missing latitude
+2019-08-06 08:10:05,418 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,443 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,443 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,465 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,465 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,481 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,481 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,503 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,503 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,524 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,524 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,541 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,541 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,553 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,553 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,565 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,565 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,582 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,582 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,609 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,609 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,627 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,627 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,649 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,649 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,665 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,665 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,688 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,688 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,709 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,709 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,725 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,725 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,749 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,749 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,769 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,769 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,784 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,784 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,804 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,804 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,834 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,835 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,850 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,850 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,866 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,866 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,892 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,892 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,904 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,904 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,917 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,917 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,936 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,936 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,954 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,954 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:05,966 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:05,967 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:05,986 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:05,986 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:05,998 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:05,998 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,011 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,012 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,027 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,028 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,046 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,046 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,058 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,058 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,092 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,092 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,139 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,139 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,161 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,161 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,203 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,203 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,225 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,225 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,251 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,252 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,345 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,345 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,370 - aqandu - [getInfluxAirUSensors:2483] - INFO - A81B6A7A6157 missing latitude
+2019-08-06 08:10:06,370 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,415 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,415 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,446 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,446 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,504 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,504 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,518 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,518 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,545 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,545 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,574 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,574 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,600 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,600 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,618 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,618 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,640 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,640 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,655 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,655 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,672 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,672 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,695 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,696 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,707 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,707 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,726 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,726 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,768 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,768 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,784 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,784 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,808 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,808 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,833 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,841 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,872 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,872 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,899 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,899 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,915 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,915 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,928 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,928 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,943 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,943 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:06,960 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:06,960 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:06,974 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:06,974 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:06,988 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:06,989 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:07,009 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:07,009 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:07,023 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:07,023 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:07,039 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:07,039 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:07,056 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:07,056 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:07,070 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:07,070 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:07,086 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:07,086 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:07,103 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:07,103 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:07,119 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:07,119 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:07,148 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:07,149 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:07,180 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:07,180 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:07,192 - aqandu - [getInfluxAirUSensors:2487] - INFO - finished get latitude
+2019-08-06 08:10:07,192 - aqandu - [getInfluxAirUSensors:2489] - INFO - started get longitude
+2019-08-06 08:10:07,217 - aqandu - [getInfluxAirUSensors:2506] - INFO - finished get longitude
+2019-08-06 08:10:07,218 - aqandu - [getInfluxAirUSensors:2508] - INFO - started get latest pm25 measurement
+2019-08-06 08:10:07,234 - aqandu - [getInfluxAirUSensors:2528] - INFO - finished get latest pm25 measurement
+2019-08-06 08:10:07,234 - aqandu - [getInfluxAirUSensors:2471] - INFO - started get latitude
+2019-08-06 08:10:07,250 - aqandu - [getInfluxAirUSensors:2483] - INFO - F45EABA3325F missing latitude
+2019-08-06 08:10:07,250 - aqandu - [getInfluxAirUSensors:2544] - INFO - ******** influx airU done ********
+2019-08-06 08:10:07,251 - aqandu - [getLiveSensors:509] - INFO - 77
+2019-08-06 08:10:07,252 - aqandu - [getLiveSensors:513] - INFO - 445
+2019-08-06 08:10:07,260 - aqandu - [getLiveSensors:541] - INFO - get all dataSeries done

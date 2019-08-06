@@ -1,4 +1,4 @@
-instance/config.py
+/instance/*
 .ipynb_checkpoints
 Icon
 Icon?
