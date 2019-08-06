@@ -1,0 +1,12 @@
+aqanduAPI*.log
+/instance/*
+instance/*
+.ipynb_checkpoints
+Icon
+Icon?
+aqandu_data_access_api.egg-info
+uncaughtErrors.log
+/__pycache__/*
+__pycache__/*
+MANIFEST.in
+
