@@ -1,0 +1,17 @@
+2019-11-22 10:21:29,793 - uncaughtExcpt - [exception_handler:104] - ERROR - An uncaught exception
+Traceback (most recent call last):
+  File "/home/airu/aqandu-db-api-py3/aqandu-db-api-py3/lib/python3.4/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/airu/aqandu-db-api-py3/aqandu-db-api-py3/lib/python3.4/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/airu/aqandu-db-api-py3/aqandu-db-api-py3/lib/python3.4/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/airu/aqandu-db-api-py3/aqandu-db-api-py3/lib/python3.4/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/airu/aqandu-db-api-py3/aqandu-db-api-py3/lib/python3.4/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/airu/aqandu-db-api-py3/aqandu-db-api-py3/lib/python3.4/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/airu/aqandu-db-api-py3/aqandu_data_access_api_py3/influx/influx.py", line 334, in get_data
+    name_or_multiple = '_' + sensorList[0] if len(sensorList) == 1 else '_multiple'
+TypeError: Can't convert 'int' object to str implicitly

@@ -1,5 +1,6 @@
 import math
 import time
+import sys
 
 from datetime import datetime, timedelta
 from flask import jsonify, request, Blueprint, redirect, render_template, url_for, make_response
@@ -8,6 +9,9 @@ from pymongo import MongoClient
 
 import pandas as pd
 import numpy as np
+from geopy.distance import geodesic
+from geopy import Point
+import json
 
 import logging
 
@@ -463,6 +467,92 @@ def getLiveSensors(sensorSource):
     print("*********** Time to download:", end - start)
 
     return jsonify(dataSeries)
+
+# /api/getInRadius?lat=40.734379&lon=-111.872183&r=1.2&measurement=pm25&sensorSource=PurpleAir&start=2017-10-01T00:00:00Z&end=2017-10-02T00:00:00Z
+@influx.route('/api/getInRadius', methods=['GET'])
+def getInRadius():
+    try:
+        validSources = ['airu', 'purpleair', 'daq']
+        LOGGER.info('*********** getInRadius request started ***********')
+
+        params = request.args
+        LOGGER.info('params: ' + ' , '.join(params))
+
+        correct_params = ['lat', 'lon', 'r', 'end', 'measurement', 'sensorSource']
+        if not validateInputs(correct_params, params):
+            msg = 'Missing or misspelled parameter. Correct parameters are: [{}]'.format(' , '.join('"{}"'.format(p) for p in correct_params))
+            LOGGER.info(msg)
+            raise InvalidUsage(msg, status_code=404)
+
+        if not validateDate(params['start']) or not validateDate(params['end']):
+            resp = jsonify({'message': "Incorrect date format, should be %Y-%m-%dT%H:%M:%SZ, e.g.: 2018-01-03T20:00:00Z"})
+            resp.status_code = 400
+            return resp
+        sensorSource = params['sensorSource'].lower()
+        if sensorSource not in validSources:
+            msg = 'sensorSource must be in this list: [{}]'.format(' , '.join(validSources))
+            LOGGER.info(msg)
+            raise InvalidUsage(msg, status_code=404)
+
+        client = DataFrameClient(host=current_app.config['INFLUX_HOST'],
+                                port=current_app.config['INFLUX_PORT'],
+                                username=current_app.config['INFLUX_USERNAME'],
+                                password=current_app.config['INFLUX_PASSWORD'],
+                                database=current_app.config['INFLUX_AIRU_DATABASE'],
+                                ssl=current_app.config['SSL'],
+                                verify_ssl=current_app.config['SSL']) 
+
+        # Boundary coordinates certain distance from center
+        latN = geodesic(kilometers=float(params['r'])).destination(Point(float(params['lat']), float(params['lon'])), 0).latitude
+        lonE = geodesic(kilometers=float(params['r'])).destination(Point(float(params['lat']), float(params['lon'])), 90).longitude
+        latS = geodesic(kilometers=float(params['r'])).destination(Point(float(params['lat']), float(params['lon'])), 180).latitude
+        lonW = geodesic(kilometers=float(params['r'])).destination(Point(float(params['lat']), float(params['lon'])), 270).longitude
+        
+        if sensorSource == 'airu':
+            # lat, lon, alt are fields in the airU database
+            q = """select mean({}),mean(Latitude),mean(Longitude),mean(Altitude) from airQuality where time >= '{}' and time <= '{}' and Latitude >= {} and Latitude <= {} and Longitude >= {} and Longitude <= {} group by time(1h), ID;""".format(lookupParameterToAirUInflux[measurement], start, end, latS, latN, lonW, lonE)
+            df_dict = client.query(q, chunked=True)
+            df = pd.DataFrame()
+            for k, v in df_dict.items():
+                # Column name contains all the statis info
+                col_name = json.dumps({
+                    "ID": k[1][0][1],
+                    "Latitude": v['mean_1'].mean(),
+                    "Longitude": v['mean_2'].mean(),
+                    "Altitude": v['mean_3'].mean(),
+                    "Sensor Source": "airu",
+                    "Measurement": params['measurement']})
+                # Get just the measurement values (like PM) and rename with JSON dict obj
+                df_partial = v[['mean']].copy().rename(columns={'mean': col_name})
+
+                # Join it with the rest
+                df = df.join(df_partial, how='outer')   
+
+            # Convert the whole thing to JSON
+            json_obj = jsonify(df.to_json(orient='index'))
+
+        elif sensorSource == 'purpleair' or sensorSource == 'daq':
+            client.switch_database('defaultdb')
+
+            lat_str = str_bldr(latN, latS)
+            lon_str = str_bldr(lonW, lonE)
+            q = """select mean({}) from airQuality where time >= '{}' and time <= '{}' and Latitude=~/{}/ and Longitude=~/{}/ group by time(1h), ID, Latitude, Longitude, "Altitude (m)", "Sensor Source";""".format(lookupQueryParameterToInflux[params['measurement']], params['start'], params['end'], lat_str, lon_str)
+            df_dict = client.query(q, chunked=True)
+            df = pd.DataFrame()
+            for k, v in df_dict.items():
+                col_name = dict(k[1])
+                col_name["Measurement"] = params['measurement']
+                col_name = json.dumps(col_name)
+                df_partial = v.copy().rename(columns={'mean':  col_name})
+                df = df.join(df_partial, how='outer')
+            json_obj = jsonify(df.to_json(orient='index'))
+
+        json_obj.status_code = 200
+        return json_obj 
+
+    except Exception as e:
+        raise InvalidUsage(str(e) + 'line number: {}'.format(sys.exc_info()[-1].tb_lineno), status_code=404)
+
 
 
 # /api/rawDataFrom?id=1010&sensorSource=PurpleAir&start=2017-10-01T00:00:00Z&end=2017-10-02T00:00:00Z&show=all
@@ -2794,3 +2884,14 @@ def validateLocation(lat, lon):
         return False
 
     return True
+
+
+def str_bldr(high, low):
+        s = ''
+        for a, b in zip(str(high), str(low)):
+            if a == b:
+                s += a
+            else:
+                s += '[{}-{}]'.format(b, a)
+                break
+        return s
