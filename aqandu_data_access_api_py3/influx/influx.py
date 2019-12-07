@@ -84,6 +84,355 @@ lookupParameterToAirUInflux = {
     'no': 'NO'
 }
 
+UPLOAD_FOLDER = './uploads'
+ALLOWED_EXTENSIONS = {'csv'}
+# current_app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+# current_app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+
+
+def allowed_file(filename):
+    return '.' in filename and \
+            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
+def upload_file_to_influxdb(filename, database, measurement):
+
+    client = DataFrameClient(host=current_app.config['INFLUX_HOST'],
+                                   port=current_app.config['INFLUX_PORT'],
+                                   username=current_app.config['INFLUX_USERNAME'],
+                                   password=current_app.config['INFLUX_PASSWORD'],
+                                   database=database,
+                                   ssl=current_app.config['SSL'],
+                                   verify_ssl=current_app.config['SSL'])
+
+    filename = UPLOAD_FOLDER + '/' + filename
+    df = pd.read_csv(filename, index_col=0)
+
+    # Convert all int64 columns to float so db doesn't get conflicting datatypes
+    for k in df.keys():
+        if df[k].dtype == np.int64:
+            df[k] = df[k].astype(float)
+
+    # Convert index to datetime
+    df.index = pd.to_datetime(df.index, format='%Y-%m-%d %H:%M:%S.%f')
+
+    # Add nanosecond noise between +/- 1 second to make sure we don't have collisions
+    # because SD card only goes to second precision
+    td = np.random.uniform(-1e9, 1e9, len(df)).astype('timedelta64[ns]')
+    df.index += td
+
+    # Get the Tag Values from the InfluxDB Measurement
+    # tagKeys = ['ID', 'SensorModel', 'topic', 'Source']
+    rs = client.query(query='show tag keys from airQuality;show field keys from airQuality')
+    tagKeys = list(set([i['tagKey'] for i in rs[0].get_points(measurement=measurement)] + ['Source']))
+
+    # Get the Field Values from the InfluxDB Measurement
+    fieldKeys = [i['fieldKey'] for i in rs[1].get_points(measurement=measurement)]
+
+    # Write the DataFrame to InfluxDB
+    print('About to write:\n', df)
+    client.write_points(dataframe=df, measurement=measurement, tag_columns=tagKeys, field_columns=fieldKeys)
+
+
+@influx.route('/uploadcsv', methods=['GET', 'POST'])
+def upload_file():
+    LOGGER.info('Route /uploadcsv was called. Inside upload_file()')
+    LOGGER.info('Current working directory: %s' % os.getcwd())
+    if request.method == 'POST':
+        # check if the post request has the file part
+        if 'file' not in request.files:
+            return redirect(request.url)
+        file = request.files['file']
+        # if user does not select file, browser also
+        # submit an empty part without filename
+        if file.filename == '':
+            return redirect(request.url)
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(UPLOAD_FOLDER, filename))
+            upload_file_to_influxdb(file.filename, 'airu_offline', 'airQuality')
+
+            # return redirect(url_for('uploaded_file', filename=filename))
+    try:
+        return '''
+        <!doctype html>
+        <title>Upload new File</title>
+        <h1>Upload new File</h1>
+        <form method=post enctype=multipart/form-data>
+          <input type=file name=file>
+          <input type=submit value=Upload>
+        </form>
+        '''
+    except Exception as e:
+        LOGGER.info('html could not be rendered')
+        return str(e)
+
+
+
+@influx.errorhandler(InvalidUsage)
+def handle_invalid_usage(error):
+    response = jsonify(error.to_dict())
+    response.status_code = error.status_code
+    return response
+
+
+# @influx.errorhandler(ValueError)
+# def handle_value_error(error):
+#
+#     rv = dict(())
+#     rv['message'] = error.__cause__ or error.__context__
+#
+#     response = jsonify(rv)
+#     response.status_code = 400
+#     return response
+
+
+@influx.errorhandler(500)
+def exception_handler(error):
+    uncaught_LOGGER.error("An uncaught exception", exc_info=True)
+
+    # response = jsonify(error='An uncaught exception')
+    # response.status_code = error.status_code
+    # return response
+    return 'An uncaught exception', 500
+
+
+@influx.route('/test/online')
+def online():
+        LOGGER.info('********** Test/Online **********')
+
+        # Server won't break if there's a render issue
+        try:
+            return render_template('online.html')
+        except Exception as e:
+            LOGGER.info('dashboard.html could not be rendered')
+            return str(e)
+
+
+@influx.route('/dbquery')
+def dbquery():
+    text = request.args.get('jsdata')
+
+    try:
+        dfclient = DataFrameClient(host=current_app.config['INFLUX_HOST'],
+                                   port=current_app.config['INFLUX_PORT'],
+                                   username=current_app.config['INFLUX_USERNAME'],
+                                   password=current_app.config['INFLUX_PASSWORD'],
+                                   database='airu_offline',
+                                   ssl=current_app.config['SSL'],
+                                   verify_ssl=current_app.config['SSL'])
+
+        query = 'SELECT * FROM airQuality WHERE time >= now() - 2m'
+        df = dfclient.query(query, chunked=True)['airQuality'].drop_duplicates(subset='ID', keep='last')
+
+        df = df[['ID', 'PM2.5', 'Temperature', 'Humidity', 'CO', 'NO', 'SecActive']]
+        df = df.sort_values(by=['ID'])
+
+        if text:
+            text = text.replace(':', '').upper()
+            df = df[df['ID'].str.contains(text)]
+
+        df['good'] = (df['PM2.5'] < 10) & \
+                     (df['Temperature'] > 20) & \
+                     (df['Humidity'] >= 0) & \
+                     (df['CO'] > 0) & \
+                     (df['NO'] > 0) & \
+                     (df['SecActive'] < 3600)
+
+        df['ID'] = [''.join(list(''.join(l + ':' * (n % 2 == 1))
+                                 for n, l in enumerate(list(ID))))[:-1]
+                    for ID in df['ID']]
+
+        df_list = df.values.tolist()
+
+    except Exception as e:
+        df_list = []
+        return str(e)
+
+    return render_template('dbquery.html', table=df_list)
+
+
+@influx.route("/api/dashboard")
+def dashboard():
+
+    LOGGER.info('********** Dashboard **********')
+
+    # Server won't break if there's a render issue
+    try:
+        return render_template('dashboard.html')
+    except Exception as e:
+        LOGGER.info('dashboard.html could not be rendered')
+        return str(e)
+
+
+# @influx.route("/api/errorHandler/<error>")
+# def error_handler(error):
+#
+#     LOGGER.info('********** errorHandler **********')
+#     LOGGER.info('errorHandler with error={}'.format(str(error)))
+#
+#     try:
+#         return render_template('error_template.html', anError=error)
+#     except Exception as e:
+#         LOGGER.info('error_template.html could not be rendered')
+#         return str(e)
+
+
+@influx.route("/api/get_data", methods=['POST'])
+def get_data():
+
+    LOGGER.info('********** download_file **********')
+
+    dataType = request.form['measType']
+    sensorList = request.form['sensorIDs']
+    startDate = request.form['startDate']
+    endDate = request.form['endDate']
+    hourAvg = 'hourAvg' in request.form.keys()
+
+    LOGGER.info(dataType)
+    LOGGER.info(sensorList)
+    LOGGER.info(startDate)
+    LOGGER.info(endDate)
+
+    LOGGER.info('dataType={}, sensorList={}, startDate={}, endDate={}'.format(dataType, sensorList, startDate, endDate))
+    if dataType == 'Not Supported':
+        msg = "Option is not supported"
+        # return redirect(url_for(".error_handler", error=msg))
+        raise InvalidUsage(msg, status_code=400)
+
+    # Format the dates to the correct Influx string
+    try:
+        start_dt = datetime.strptime(startDate, '%Y-%m-%d')
+        end_dt = datetime.strptime(endDate, '%Y-%m-%d')
+    except ValueError as e:
+        LOGGER.info('date conversion error: {}'.format(str(e)))
+        # return redirect(url_for(".error_handler", error='ERROR: ' + str(e)))
+        raise InvalidUsage('ERROR: ' + str(e), status_code=400)
+
+    start_influx_query = datetime.strftime(start_dt, '%Y-%m-%dT%H:%M:%SZ')
+    end_influx_query = datetime.strftime(end_dt, '%Y-%m-%dT%H:%M:%SZ')
+
+    # This dataframe will hold data for all queried sensors
+    dff = pd.DataFrame()
+
+    # Sanitize the sensor list input
+    sensorList = sensorList.replace(' ', '')
+    sensorList = sensorList.replace('RosePark', 'Rose Park')
+    sensorList = sensorList.split(',')
+    sensorList = [s.strip() for s in sensorList]
+    sensorList = sort_alphanum(sensorList)
+
+    LOGGER.info('Sanitized sensorList: {}'.format(sensorList))
+
+    airU_in_list = [getSensorSource(s) == 'AirU' for s in sensorList]
+
+    if dataType != 'pm25' and not all(airU_in_list):
+        LOGGER.info('unexpected data type for sensor list - redirect to errorHandler')
+        # LOGGER.info(url_for("influx.dashboard"))
+        # LOGGER.info(url_for(".error_handler", error='test message'))
+        raise InvalidUsage('You cannot access that data type for sensors that are not AirU sensors', status_code=400)
+        # return redirect(url_for(".error_handler", error='You cannot access that data type for sensors that are not AirU sensors'))
+
+    customIDToMAC = None
+    if any(airU_in_list):
+        LOGGER.info('{} AirU sensors in the list. Getting sensor ID to mac dict now.'.format(airU_in_list.count(True)))
+
+        # getting the mac address from the customID send as a query parameter
+        customIDToMAC = getCustomSensorIDToMAC()
+
+    DFclient = None
+    for sensor in sensorList:
+
+        sensorSource = getSensorSource(sensor)
+
+        LOGGER.info('sensor={}, source={}'.format(sensor, sensorSource))
+
+        if not sensorSource:
+            LOGGER.info('Could not find the sensor source for {}, going to the next sensor'.format(sensor))
+            continue
+
+        elif sensorSource == 'AirU':
+
+            try:
+                ID = customIDToMAC[sensor]
+            except KeyError as e:
+                LOGGER.info('{} is an unknown ID, not in DB. Error: {}'.format(sensor, str(e)))
+                raise InvalidUsage('{} is an unknown ID, not in DB.'.format(sensor), status_code=400)
+
+            database = 'INFLUX_AIRU_DATABASE'
+            measName = dataType
+            try:
+                influx_fieldKey = lookupParameterToAirUInflux[dataType]
+            except KeyError as e:
+                return str(e)
+
+        else:
+            ID = sensor     # Sensors and ID's have the same name
+            database = 'INFLUX_POLLING_DATABASE'
+            measName = 'airQuality'  # All fields are in the airQuality measurement table
+            try:
+                influx_fieldKey = lookupQueryParameterToInflux[dataType]
+            except KeyError as e:
+                return str(e)
+
+        # strip the double quote (which was needed for query)
+        dataframe_key = influx_fieldKey.replace('"', '')
+
+        # Initial setup (only done once)
+        if DFclient is None:
+            DFclient = DataFrameClient(host=current_app.config['INFLUX_HOST'],
+                                       port=current_app.config['INFLUX_PORT'],
+                                       username=current_app.config['INFLUX_USERNAME'],
+                                       password=current_app.config['INFLUX_PASSWORD'],
+                                       database=current_app.config[database],
+                                       ssl=current_app.config['SSL'],
+                                       verify_ssl=current_app.config['SSL'])
+
+        # Switch databases if necessary (IDs are sorted, so this will be minimal)
+        elif DFclient._database != current_app.config[database]:
+            DFclient.switch_database(database=current_app.config[database])
+
+        query = "SELECT * FROM {} WHERE ID='{}' AND time >= '{}' AND time <= '{}'".format(measName, ID,
+                                                                                          start_influx_query,
+                                                                                          end_influx_query)
+
+        df_dict = DFclient.query(query, chunked=True)
+
+        if not df_dict:
+            print('\n{} has no data for the given timeframe\n'.format(sensor))
+            dff[sensor] = ''    # Fill column with NaN
+
+        else:
+            df = df_dict[measName]
+            dff = AddSeries2DataFrame(dff, df, sensor, dataframe_key)
+
+    dff.index.name = 'time'
+
+    # Return the csv file if it isn't empty
+    if not dff.empty:
+
+        # hour Averaging
+        if hourAvg:
+            dff = dff.replace(-1, np.nan)
+            dff = dff.resample('H').mean()
+            # avg_str = '_HR-AVG'
+        # else:
+            # avg_str = ''
+
+        name_or_multiple = '_' + sensorList[0] if len(sensorList) == 1 else '_multiple'
+        filename = 'AirU{}_{}_{}_{}.csv'.format(name_or_multiple, dataframe_key, startDate, endDate)
+        response = make_response(dff.to_csv())      # doesn't save a copy locally
+        cd = 'attachment; filename={}'.format(filename)
+        response.headers['Content-Disposition'] = cd
+        response.mimetype = 'text/csv'
+        # flash('Data was successfully downloaded.')
+        return response     # page is automatically reloaded after response is sent
+
+    # Otherwise notify the user that the data doesn't exist
+    else:
+        # flash('Data does not exist.')
+        return redirect(url_for("influx.dashboard"))
+
 
 @influx.errorhandler(InvalidUsage)
 def handle_invalid_usage(error):
@@ -462,11 +811,15 @@ def getLiveSensors(sensorSource):
         # abort(404)
         raise InvalidUsage('Something is really wrong, here!!', status_code=404)
 
-    end = time.time()
+        dataSeries_mesowest = getInfluxPollingSensors(nowMinus20m_str, "Mesowest")
+        LOGGER.info('length of dataSeries_mesowest is {}'.format(len(dataSeries_mesowest)))
 
-    print("*********** Time to download:", end - start)
+        dataSeries_DAQ = getInfluxPollingSensors(nowMinus4h_str, "DAQ")
+        LOGGER.info('length of dataSeries_DAQ is {}'.format(len(dataSeries_DAQ)))
 
-    return jsonify(dataSeries)
+        airUDataSeries = getInfluxAirUSensors(nowMinus5mStr)
+        LOGGER.info(len(airUDataSeries))
+        LOGGER.debug(airUDataSeries)
 
 # /api/getInRadius?lat=40.734379&lon=-111.872183&r=1.2&measurement=pm25&sensorSource=PurpleAir&start=2017-10-01T00:00:00Z&end=2017-10-02T00:00:00Z
 @influx.route('/api/getInRadius', methods=['GET'])
@@ -552,7 +905,6 @@ def getInRadius():
 
     except Exception as e:
         raise InvalidUsage(str(e) + 'line number: {}'.format(sys.exc_info()[-1].tb_lineno), status_code=404)
-
 
 
 # /api/rawDataFrom?id=1010&sensorSource=PurpleAir&start=2017-10-01T00:00:00Z&end=2017-10-02T00:00:00Z&show=all
@@ -1349,6 +1701,83 @@ def getContours():
 
     LOGGER.info('*********** getting contours request done ***********')
 
+    return resp
+
+
+@influx.route('/api/contours_debugging', methods=['GET'])
+def getContours_debugging():
+
+    LOGGER.info('*********** getting contours request started ***********')
+
+    queryParameters = request.args
+    LOGGER.info(queryParameters)
+
+    startDate = queryParameters['start']
+    LOGGER.info(startDate)
+    startDate = datetime.strptime(startDate, '%Y-%m-%dT%H:%M:%SZ')
+    LOGGER.info(startDate)
+    endDate = queryParameters['end']
+    endDate = datetime.strptime(endDate, '%Y-%m-%dT%H:%M:%SZ')
+
+    LOGGER.info('the start date')
+    LOGGER.info(startDate)
+    LOGGER.info('the end date')
+    LOGGER.info(endDate)
+
+    mongodb_url = 'mongodb://{user}:{password}@{host}:{port}/{database}'.format(
+        user=current_app.config['MONGO_USER'],
+        password=current_app.config['MONGO_PASSWORD'],
+        host=current_app.config['MONGO_HOST'],
+        port=current_app.config['MONGO_PORT'],
+        database=current_app.config['MONGO_DATABASE'])
+
+    mongoClient = MongoClient(mongodb_url)
+    db = mongoClient.airudb
+
+    # first take estimates from high collection
+    # then estimates from low collection
+    allHighEstimates = db.timeSlicedEstimates_debug_high.find({"estimationFor": {"$gte": startDate, "$lt": endDate}}).sort('estimationFor', -1)
+    # lowEstimates = db.timeSlicedEstimates_low.find({"estimationFor": {"$gte": startDate, "$lt": endDate}}).sort('estimationFor', -1)
+
+    contours = []
+
+    LOGGER.info('the allHighEstimates')
+    LOGGER.info(allHighEstimates.count())
+    for estimateSliceHigh in allHighEstimates:
+        estimationDateSliceDateHigh = estimateSliceHigh['estimationFor']
+        LOGGER.info(estimationDateSliceDateHigh)
+        contours.append({'time': estimationDateSliceDateHigh.strftime('%Y-%m-%dT%H:%M:%SZ'), 'contour': estimateSliceHigh['contours'], 'origin': 'high'})
+
+    LOGGER.info('the lowEstimates')
+    # LOGGER.info(lowEstimates.count())
+
+    # lowEstimates.batch_size(10000)
+
+    LOGGER.info('date range')
+    for aDate in pd.date_range(startDate, endDate, freq='12h')[1:]:
+        LOGGER.info(aDate)
+        lowEstimates = db.timeSlicedEstimates_debug_low.find({"estimationFor": {"$gte": startDate, "$lt": aDate}}).sort('estimationFor', -1)
+
+        for estimateSliceLow in lowEstimates:
+            estimationDateSliceDateLow = estimateSliceLow['estimationFor']
+            LOGGER.info(estimationDateSliceDateLow)
+            contours.append({'time': estimationDateSliceDateLow.strftime('%Y-%m-%dT%H:%M:%SZ'), 'contour': estimateSliceLow['contours'], 'origin': 'low'})
+
+        startDate = aDate
+
+    # for estimateSliceLow in lowEstimates:
+    #     estimationDateSliceDateLow = estimateSliceLow['estimationFor']
+    #     LOGGER.info(estimationDateSliceDateLow)
+    #     contours.append({'time': estimationDateSliceDateLow.strftime('%Y-%m-%dT%H:%M:%SZ'), 'contour': estimateSliceLow['contours'], 'origin': 'low'})
+
+    # LOGGER.info(contours)
+    #
+    # LOGGER.info(jsonify(contours))
+
+    resp = jsonify(contours)
+    resp.status_code = 200
+
+    LOGGER.info('*********** getting contours request done ***********')
     return resp
 
 
@@ -2884,7 +3313,6 @@ def validateLocation(lat, lon):
         return False
 
     return True
-
 
 def str_bldr(high, low):
         s = ''
