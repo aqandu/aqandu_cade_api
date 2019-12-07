@@ -1,5 +1,7 @@
 aqanduAPI.log*
 instance/
+instance/*
+instance/config.py
 .ipynb_checkpoints
 Icon
 Icon?
